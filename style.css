@@ -1,0 +1,19 @@
+canvas{
+  background-color:black;
+}
+
+.scores{
+  width:640px;
+}
+
+#pl-score, #en-score{
+  color:black;
+  /* background-color:white; */
+  display:inline-block;
+}
+#pl-score{
+  float:left;
+}
+#en-score{
+  float:right;
+}
