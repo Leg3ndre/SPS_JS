@@ -3,21 +3,44 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="lib/const.js"></script>
-    <script src="lib/tama.js"></script>
-    <script src="lib/player.js"></script>
-    <script src="lib/enemy.js"></script>
-    <script src="lib/game.js"></script>
-    <title>SPS_JS</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" href="./assets/favicon.ico">
+    <script src="./lib/const.js"></script>
+    <script src="./lib/tama.js"></script>
+    <script src="./lib/player.js"></script>
+    <script src="./lib/enemy.js"></script>
+    <script src="./lib/game.js"></script>
+    <title>SPS</title>
   </head>
   <body>
-    <h1>SPS_JS</h1>
+    <h1>Second Person Shooting</h1>
     <div class="scores">
       <span id="pl-score">PLAYER'S LIFE: 5</span>
       <span id="en-score">ENEMY'S LIFE: 5</span>
     </div>
     <canvas id="game" width="640" height="480"></canvas>
     <a href="#" onclick="window.location.reload();">Retry</a>
+    <div class="desc">
+      <p class="abstract">
+        FPS（一人称視点）、TPS（三人称視点）に支配された現代のシューティングゲーム界隈に一石を投じる
+        <strong>二人称視点のシューティングゲーム</strong>
+        です。
+      </p>
+      <ul class="play-manual">
+        <li>ゲームは<strong>敵視点</strong>で進行します</li>
+        <li>プレイヤーが操作するのは赤いキャラクターです</li>
+        <li>三角形の物体が弾です（赤: 自分の弾、緑: 敵の弾）。弾は同時に5発までしか撃てません</li>
+        <li>敵の弾を避け、自分の弾を敵にうまく当ててください</li>
+        <li>※ 現状では敵のライフを0にしてもゲームは終了しません</li>
+        <li>操作方法
+          <ul>
+            <li>→ or D: 右へ移動</li>
+            <li>← or A: 左へ移動</li>
+            <li>↑ or W: 弾を発射</li>
+            <li>R: リトライ</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
